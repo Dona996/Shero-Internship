@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Invision App</title>
+    
+</head>
+<body>
+<section id="grid">
+        <div class="container">
+            <img src="images/primary.png" alt="primary" class="img1" ></img>
+            <img src="images/secondary.png" alt="secondary"class="img2"></img>
+            <img src="images/secondary.png" alt="third" class="img3"></img>
+
+        </div>
+   
+    
+        <div class="flex">
+           
+            <div class="item">
+                 <h1>Tattoo supplies</h1>
+            <img src="images/product.png" alt="">
+            <button class="btn">Shop now</button>
+            </div>
+            <div class="item">
+                 <h1>Body jewerly</h1>
+            <img src="images/product.png" alt="">
+            <button class="btn"> Shop now</button>
+            </div>
+            <div class="item"> 
+                <h1>Piercing supplies</h1>
+            <img src="images/product.png" alt="">
+            <button class="btn">Shop now</button></div>
+            <div class="item"> 
+                <h1>Medical supplies</h1>
+            <img src="images/product.png" alt="">
+            <button class="btn">Shop now</button>
+        </div>
+        <div class="item"> 
+             <h1>Permanent makeup</h1>
+            <img src="images/product.png" alt="">
+            <button class="btn">Shop now</button>
+        </div>
+
+        </div>
+
+ </section>
+ <div class="products">New Product</div>
+ <br>
+
+<div class="glide">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+      <li class="glide__slide">
+        <img src="images/product.png" alt="">
+        <h1> 100 $</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+      </li>
+      <li class="glide__slide">      
+        <img src="images/product.png" alt="">
+          <h1> 100 $</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+   
+      <li class="glide__slide">       
+        <img src="images/product.png" alt="">
+      <h1> 100 $</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p></li>
+      <li class="glide__slide">
+        <img src="images/product.png" alt="">
+      <h1> 100 $</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+      </li>
+      <li class="glide__slide">
+        <img src="images/product.png" alt="">
+      <h1> 100 $</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+
+      </li>
+      <li class="glide__slide">
+        <img src="images/product.png" alt="">
+       <h1> 100 $</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p></li>
+      <li class="glide__slide"><img src="images/product.png" alt="">
+       <h1> 100 $</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p></li>
+    </ul>
+  </div>
+      <div class="glide__arrows" data-glide-el="controls">
+      <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><
+</button>
+      <button class="glide__arrow glide__arrow--right" data-glide-dir=">">>
+</button>
+    </div>
+</div>
+
+
+<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+  <script>
+  const config = {
+   type:'carousel',
+   perView:5,
+   breakpoints:{
+    1200:{
+      perView:1
+    },
+    600: {
+      perView:1
+    }
+   }
+  };
+  new Glide(".glide" , config).mount();
+ 
+  
+
+
+</script>
+</body>
+</html>
